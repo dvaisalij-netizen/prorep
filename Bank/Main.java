@@ -9,21 +9,21 @@ public class Main {
         SavingsAccount savingsaccount = new SavingsAccount();
         CurrentAccount currentaccount = new CurrentAccount();
 
-        // USER 1 - SAVINGS
-        user.setaccountType("Savings Account");   // CHANGED
+        
+        user.setaccountType("Savings Account");  
         user.setname("Deposit");
         user.setdepositAmount(10000);
 
         savingsaccount.setbalance(user.operation());
 
-        // USER 2 - CURRENT
-        user1.setaccountType("Current Account");  // CHANGED
+        
+        user1.setaccountType("Current Account");  
         user1.setname("Deposit");
         user1.setdepositAmount(50000);
 
         currentaccount.setbalance(user1.operation());
 
-        // OUTPUT
+        
         if (user.getaccountType() == "Savings Account") {
             System.out.println("USER1:SAVINGS");
             System.out.println("Deposited:");
@@ -42,4 +42,5 @@ public class Main {
             System.out.println("Overdraft Enabled");
         }
     }
+
 }
